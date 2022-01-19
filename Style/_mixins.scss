@@ -1,0 +1,29 @@
+@mixin margin-padding {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+@mixin flex_center($just-content, $direction) {
+  display: flex;
+  justify-content: $just-content;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin my-list-style($list-font-size) {
+  color: $text-color;
+  font-size: $list-font-size;
+  list-style: none;
+}
+
+@mixin break($length) {
+  @media (min-width: $length) {
+    @content;
+  }
+}
+
+@mixin max-break($length) {
+  @media (max-width: $length) {
+    @content;
+  }
+}

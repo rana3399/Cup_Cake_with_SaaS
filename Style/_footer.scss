@@ -1,0 +1,44 @@
+/*!--Footer--*/
+
+.footer-container {
+  width: $width + 20%;
+  margin-top: 30px;
+  background-color: darken($color: $primary-color, $amount: 50%);
+  font-size: large;
+  @include flex_center(space-around, column);
+
+  a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  & .logo {
+    margin-top: 10px;
+  }
+
+  .social-container {
+    @include flex_center(flex-end, row);
+    @include my-list-style(medium);
+
+    li {
+      @include margin-padding;
+      a {
+        &:hover {
+          font-size: large;
+          color: $pink;
+          transition: all ease 0.4s;
+        }
+      }
+    }
+  }
+
+  .contact-container {
+    @include flex_center(space-around, row);
+    @include margin-padding;
+
+    li {
+      @include my-list-style(medium);
+      margin: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*!--Header--*/
+header {
+  width: 100%;
+  background-color: #050640;
+}
+
+header .nav-menu {
+  border: 1px solid black;
+}
+
+header .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .nav-menu ul li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #eff1f3;
+  font-size: large;
+  list-style: none;
+}
+
+header .nav-menu ul li a {
+  text-decoration: none;
+  color: #eff1f3;
+}
+
+/*!--Footer--*/
+.footer-container {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #050640;
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.footer-container .logo {
+  margin-top: 10px;
+}
+
+.footer-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #eff1f3;
+  font-size: medium;
+  list-style: none;
+}
+
+.footer-container .social-container li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.footer-container .social-container li a:hover {
+  font-size: large;
+  color: #dfb2b2;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.footer-container .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.footer-container .contact-container li {
+  color: #eff1f3;
+  font-size: medium;
+  list-style: none;
+  margin: 0 20px;
+}
+
+/*!--Main--*/
+main .top-hero-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #dfb2b2;
+  height: 150px;
+  padding: 15px;
+}
+
+main .top-hero-image-container .t-img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 410px) {
+  main .top-hero-image-container .t-img {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 600px) {
+  main .top-hero-image-container .t-img {
+    width: 120px;
+  }
+}
+
+main .our-slogan {
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  font-size: x-large;
+  margin: 0 10px;
+}
+
+.main-feature-1 {
+  width: 100vw;
+}
+
+@media (min-width: 700px) {
+  .main-feature-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .main-feature-1 .welcome-des-container {
+    width: 90%;
+  }
+}
+
+.main-feature-1 h1, .main-feature-1 p {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.main-feature-1 p {
+  line-height: 1.6;
+  padding: 1rem;
+  font-family: "Bradley Hand", cursive;
+}
+
+.main-feature-1 .main-feature-img-container {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.main-feature-1 .main-feature-img-container .main-feature-img {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+  .main-feature-1 .main-feature-img-container .main-feature-img {
+    height: 300px;
+  }
+}
+
+/*! Multy Image Section */
+.multy-img-container-parent {
+  width: 100vw;
+  background-color: #dfb2b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.multy-img-container-parent img {
+  width: 150px;
+  height: 200px;
+}
+
+@media (min-width: 500px) {
+  .multy-img-container-parent img {
+    width: 240px;
+  }
+}
+
+@media (min-width: 600px) {
+  .multy-img-container-parent img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .multy-img-container-parent img {
+    width: 240px;
+  }
+}
+
+/*!--Table --*/
+.table {
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .table {
+    width: 70%;
+  }
+}
+
+.table th {
+  text-align: left;
+  border-bottom: 1px dotted black;
+  background-color: #5356f1;
+}
+
+.table th:hover {
+  background-color: #aaa04a;
+}
+
+.table td {
+  margin-top: 10px;
+  border-bottom: 1px dotted black;
+}
+/*# sourceMappingURL=newStyle.css.map */

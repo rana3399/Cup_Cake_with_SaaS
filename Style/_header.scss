@@ -1,0 +1,26 @@
+@import "./mixins";
+
+/*!--Header--*/
+
+header {
+  width: 100%;
+  background-color: darken($color: $primary-color, $amount: 50%);
+
+  .nav-menu {
+    border: 1px solid black;
+
+    & ul {
+      @include flex_center(center, row);
+
+      & li {
+        @include margin-padding;
+        @include my-list-style(large);
+
+        & a {
+          text-decoration: none;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
